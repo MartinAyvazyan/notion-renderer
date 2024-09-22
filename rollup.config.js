@@ -7,6 +7,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import replace from '@rollup/plugin-replace';
 import url from '@rollup/plugin-url';
 
+const isWatchMode = process.env.ROLLUP_WATCH === 'true';
+
 export default {
   input: 'index.tsx',
   output: [
@@ -29,14 +31,16 @@ export default {
       limit: 8192, // Inline files smaller than 8 KB, larger files are copied
       emitFiles: true, // Emit files that exceed the size limit
     }),
-    serve({
-      open: true,
-      contentBase: ['.'],
-      port: 3000,
-    }),
-    livereload({
-      watch: 'dist',
-    }),
+    isWatchMode &&
+      serve({
+        open: true,
+        contentBase: ['.'],
+        port: 3000,
+      }),
+    isWatchMode &&
+      livereload({
+        watch: 'dist',
+      }),
     terser(),
   ],
 };
