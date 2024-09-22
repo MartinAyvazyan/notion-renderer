@@ -13,7 +13,7 @@ export default {
   input: 'index.tsx',
   output: [
     {
-      file: 'dist/bundle.js',
+      file: 'public/bundle.js',
       format: 'iife',
       sourcemap: true,
     },

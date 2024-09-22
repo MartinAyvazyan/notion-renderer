@@ -1,7 +1,7 @@
 {
   "name": "bluequbit-project",
   "version": "1.0.0",
-  "main": "dist/cjs/index.js",
+  "main": "public/bundle.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -10,7 +10,7 @@
     "build:types": "tsc",
     "format": "prettier --write ."
   },
-  "module": "dist/esm/index.js",
+  "module": "public/bundle.js",
   "devDependencies": {
     "@emotion/react": "^11.13.3",
     "@rollup/plugin-commonjs": "^26.0.1",
