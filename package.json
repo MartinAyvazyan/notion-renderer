@@ -5,7 +5,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "rollup -c -w --bundleConfigAsCjs",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "build:watch": "rollup -c -w --bundleConfigAsCjs",
     "build:types": "tsc",
     "format": "prettier --write ."
   },
