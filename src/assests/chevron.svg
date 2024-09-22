@@ -1,0 +1,12 @@
+<svg
+        viewBox="0 0 100 100"
+        width="50"
+        height="50"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-label="Triangle icon"
+        role="img"
+>
+    <title>Triangle Icon</title>
+    <!-- Rotating the triangle 90 degrees using transform -->
+    <polygon points="5.9,88.2 50,11.8 94.1,88.2" style="fill: white; transform: rotate(90deg); transform-origin: 50% 50%;"></polygon>
+</svg>

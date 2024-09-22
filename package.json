@@ -1,0 +1,38 @@
+{
+  "name": "bluequbit-project",
+  "version": "1.0.0",
+  "main": "dist/cjs/index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c -w --bundleConfigAsCjs",
+    "build:types": "tsc",
+    "format": "prettier --write ."
+  },
+  "module": "dist/esm/index.js",
+  "devDependencies": {
+    "@emotion/react": "^11.13.3",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@rollup/plugin-url": "^8.0.2",
+    "@types/react": "^18.3.8",
+    "katex": "^0.16.11",
+    "prettier": "^3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-katex": "^3.0.1",
+    "react-mathjax": "^1.0.1",
+    "react-notion": "^0.10.0",
+    "rollup": "^4.22.2",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-serve": "^1.1.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.7.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/react-dom": "^18.3.0"
+  }
+}
